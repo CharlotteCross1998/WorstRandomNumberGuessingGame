@@ -10,7 +10,7 @@ Normally, the random number guessing game is simple. You generate a random numbe
 #include <random>
 int main(int argc, char** argv)
 {
-	std::random_device r;
+    std::random_device r;
     std::default_random_engine rand(r());
     std::uniform_int_distribution<int> uniform_dist(0, 100);
     int number = uniform_dist(rand);
